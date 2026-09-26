@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+</head>
+<body >
+<div class="quiz-container">
+    <h1 class="quiz-title">General Knowledge Quiz</h1>
+
+    <!-- Quiz Question Section -->
+    <div id="quiz-screen">
+      <div class="quiz-header">
+        <span id="question-number">Question 1 of 5</span>
+      </div>
+      <h2 id="question-text">Question text goes here...</h2>
+      <div id="options-container" class="options-container">
+        <!-- Options will be dynamically rendered here -->
+      </div>
+      <button id="next-btn" class="btn" disabled>Next</button>
+    </div>
+
+    <!-- Final Result Section -->
+    <div id="result-screen" class="result-screen hide">
+      <h2>Quiz Completed!</h2>
+      <p class="score-text">Your Score: <span id="final-score">0</span> / <span id="total-questions">5</span></p>
+      <p id="score-message" class="score-message">Good Job!</p>
+      <button id="restart-btn" class="btn">Restart Quiz</button>
+    </div>
+  </div>
+</body>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="script.js" defer=""></script>
+</body>
+</html>
